@@ -19,7 +19,7 @@ async def test_project(dut):
     dut._log.info("Starting 4-bit LFSR test")
 
     # Start clock: 10 ns period
-    clock = Clock(dut.clk, 10, unit="ns")
+    clock = Clock(dut.clk, 50, unit="ns")
     cocotb.start_soon(clock.start())
 
     # Initialize all inputs
