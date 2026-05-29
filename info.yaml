@@ -3,7 +3,7 @@ project:
   title:        "4-bit Maximum-Length LFSR"
   author:       "Geeta Doddamani"
   discord:      ""
-  description:  "A 4-bit maximum-length LFSR with seed 0x1 and feedback polynomial x^4+x+1. Generates pseudo-random sequence of period 15."
+  description:  "A 4-bit maximum-length LFSR with seed 0x1 and feedback polynomial x4+x+1. Generates pseudo-random sequence of period 15."
   language:     "Verilog"
   clock_hz:     10_000_000
 
