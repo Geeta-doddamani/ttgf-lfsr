@@ -1,25 +1,23 @@
 # Tiny Tapeout project information
 project:
-  title:        "4-bit Maximum-Length LFSR"   # Project title
-  author:       "Geeta Doddamani"              # Your name
-  discord:      ""                             # Your discord username (optional)
-  description:  "A 4-bit maximum-length Linear Feedback Shift Register (LFSR) with seed 0x1 and feedback polynomial x^4+x+1. Generates pseudo-random sequence of period 15."
+  title:        "4-bit Maximum-Length LFSR"
+  author:       "Geeta Doddamani"
+  discord:      ""
+  description:  "A 4-bit maximum-length LFSR with seed 0x1 and feedback polynomial x^4+x+1. Generates pseudo-random sequence of period 15."
   language:     "Verilog"
-  clock_hz:     10_000_000                     # 10 MHz
+  clock_hz:     10_000_000
 
-  # 1x1 tile as requested (about 340x160 uM)
+  # 1x1 tile as requested
   tiles: "1x1"
 
-  # Top module name must match the module name in project.v
-  top_module:  "tt_um_example"
+  # Must match the module name in project.v AND tb.v
+  top_module:  "tt_um_geeta_doddamani_lfsr"
 
-  # Source files in ./src
   source_files:
     - "project.v"
 
-# Pinout description
 pinout:
-  # Inputs (all unused for autonomous LFSR)
+  # Inputs (all unused)
   ui[0]: ""
   ui[1]: ""
   ui[2]: ""
